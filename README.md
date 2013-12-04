@@ -9,9 +9,9 @@ Returns the popup when hovering over username to its former glory :D
 
 Adds back the [meta] link into the new top bar design on SO.
 
-**Meta Link**
+**Main Link**
 
-Adds back the [meta] link into the new top bar design on mSO.
+Adds back the [main] link into the new top bar design on mSO.
 
 
 **SE-Topbar The Light Side**
