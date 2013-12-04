@@ -23,6 +23,14 @@ $$(function(){
  }
 });
 
+//Everyone's favorite hover
+$$(function($){
+ $('.gravatar-wrapper-24').addClass('profile-link');
+ $('.profile-link').mouseenter(function(){
+  profileLink.show();
+ });
+});
+
 //Replace name
 $$(function($) {
  $(".profile-me > div:first").append("<span class='links-container' style='padding-right:2px;'>" + $(".profile-me > div:first").attr('title') + "</span>");
