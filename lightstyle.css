@@ -1,6 +1,7 @@
 /* adjusting hover style from dark to light */
 .profile-popup{
  line-height:25px;
+ margin-top: 34px;
 }
 
 .topbar .topbar-icon:hover{
