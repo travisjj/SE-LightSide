@@ -2,7 +2,7 @@ SE-LightSide
 
 **Meta Link**
 
-Adds back the [meta] link into the new top bar design being SO.
+Adds back the [meta] link into the new top bar design on SO.
 
 **Meta Link**
 
