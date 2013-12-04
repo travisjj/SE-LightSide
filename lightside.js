@@ -35,7 +35,8 @@ $$(function($){
   }, 1E3, { always: function () {
   d.cancel() }
  });
- $('.profile-link').hover(d.trigger, j.trigger);
+ $('.profile-link').mouseenter(d.trigger);
+ $('.profile-me').mouseleave(j.trigger);
 });
 
 //Replace name
