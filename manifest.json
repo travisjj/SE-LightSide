@@ -1,0 +1,13 @@
+{
+  "name": "lightside",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Script to modify meta.stackoverflow and stackoverflow",
+  "content_scripts": [
+    {
+      "matches": ["http://meta.stackoverflow.com/*","http://stackoverflow.com/*"],
+      "js": ["lightside.js"],
+      "css": ["lightstyle.css"]
+    }
+  ]
+}
