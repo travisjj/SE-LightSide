@@ -1,0 +1,34 @@
+/* adjusting hover style from dark to light */
+.topbar .topbar-icon:hover{
+ background-color: #ddd !important;
+}
+
+.topbar-links .a:hover{
+ background-color: #ddd !important;
+}
+
+.topbar .topbar-icon-on,.topbar .topbar-icon-on:hover{
+ background-color: #ddd !important;
+}
+
+.topbar .topbar-links .mod-only .icon-flag:hover{
+ background-color: #ddd !important;
+}
+
+.topbar .topbar-links .profile-me:hover{
+ background-color: #ddd !important;
+}
+
+.topbar .topbar-links .topbar-menu-links a:hover{
+ background-color: #ddd !important;
+}
+
+.topbar .topbar-links .search-container input[type=text]{
+ border:none !important;
+ border-top: 1px solid #ccc !important;
+ border-left: 1px solid #ccc !important;
+}
+
+.topbar{
+ background-color:#eee !important;
+}
