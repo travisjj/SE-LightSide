@@ -1,6 +1,10 @@
 SE-LightSide
 ===
 
+**The popup is back!**
+
+Returns the popup when hovering over username to its former glory :D
+
 **Meta Link**
 
 Adds back the [meta] link into the new top bar design on SO.
