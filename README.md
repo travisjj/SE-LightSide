@@ -19,5 +19,7 @@ Instructions for using this as a chrome extension
 ===
 
 Make a new folder, name it something fitting
+
 Copy the manifest.json, lightstyle.css, lightside.js into the folder
+
 In chrome, go to settings, extensions, load unpacked extension, and then select the new folder you made
