@@ -15,11 +15,10 @@ function $$(f) {
 
 //Main/Meta Link
 $$(function(){
- //main/meta link script authored by @Undo
- if ( document.location.host.indexOf("meta.") == 0 ) {
-  $(".topbar-menu-links").prepend("<a href='http://" + document.location.host.slice(5) + "'>main</a>");
+ if ( document.location.host.indexOf("meta.") != -1 ) {
+  $(".topbar-menu-links").prepend("<a href='http://stackoverflow.com'>main</a>");
  } else {
-  $(".topbar-menu-links").prepend("<a href='http://" + document.location.host + "'>meta</a>");
+  $(".topbar-menu-links").prepend("<a href='http://meta.stackoverflow.com'>meta</a>");
  }
 });
 
