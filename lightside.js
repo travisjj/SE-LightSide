@@ -25,15 +25,23 @@ $$(function(){
 //Everyone's favorite hover
 $$(function($){
  $('.gravatar-wrapper-24').addClass('profile-link');
- $('.profile-link').mouseenter(function(){
-  profileLink.show();
+ var d = StackExchange.helpers.DelayedReaction(function () {
+  profileLink.show()
+  }, 450, { always: function () {
+  j.cancel() }
  });
+ var j = StackExchange.helpers.DelayedReaction(function () {
+  profileLink.hide()
+  }, 1E3, { always: function () {
+  d.cancel() }
+ });
+ $('.profile-link').hover(d.trigger, j.trigger);
 });
 
 //Replace name
 $$(function($) {
  $(".profile-me > div:first").append("<span class='links-container' style='padding-right:2px;'>" + $(".profile-me > div:first").attr('title') + "</span>");
- $('.reputation').css({fontWeight:'bold'});
+ $('.links-container > .reputation').css({fontWeight:'bold'});
 });
 
 //adjusting styles which were being overriden from the css file
