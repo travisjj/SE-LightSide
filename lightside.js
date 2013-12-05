@@ -16,10 +16,17 @@ function $$(f) {
 
 //Main/Meta Link
 $$(function(){
- if ( document.location.host.indexOf("meta.") != -1 ) {
-  $(".topbar-menu-links").prepend("<a href='http://stackoverflow.com'>main</a>");
+ var url = window.location.toString().replace("http://","");
+ var re = new RegExp(/^[^\/]*/);
+ var site = url.match(re)[0];
+ if ( site.indexOf("meta.") != -1 ) {
+
+  $(".topbar-menu-links").prepend("<a href='http://"+site.replace("meta.","")+"'>main</a>");
+ 
  } else {
-  $(".topbar-menu-links").prepend("<a href='http://meta.stackoverflow.com'>meta</a>");
+  
+  $(".topbar-menu-links").prepend("<a href='http://meta."+site+"'>meta</a>");
+  
  }
 });
 
