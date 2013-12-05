@@ -5,7 +5,7 @@
   "description": "Script to modify meta.stackoverflow and stackoverflow",
   "content_scripts": [
     {
-      "matches": ["http://meta.stackoverflow.com/*","http://stackoverflow.com/*"],
+      "matches": ["http://stackoverflow.com/*","http://meta.stackoverflow.com/*","http://*.stackexchange.com/*"],
       "js": ["lightside.js"],
       "css": ["lightstyle.css"]
     }
