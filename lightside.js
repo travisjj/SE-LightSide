@@ -20,13 +20,9 @@ $$(function(){
  var re = new RegExp(/^[^\/]*/);
  var site = url.match(re)[0];
  if ( site.indexOf("meta.") != -1 ) {
-
   $(".topbar-menu-links").prepend("<a href='http://"+site.replace("meta.","")+"'>main</a>");
- 
  } else {
-  
   $(".topbar-menu-links").prepend("<a href='http://meta."+site+"'>meta</a>");
-  
  }
 });
 
