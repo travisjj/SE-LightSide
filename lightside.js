@@ -5,6 +5,7 @@
 // @author TravisJ
 // @include http://meta.stackoverflow.com/*
 // @include http://stackoverflow.com/*
+// @include http://*.stackexchange.com/*
 
 function $$(f) {
     var script = document.createElement("script");
@@ -24,7 +25,7 @@ $$(function(){
 
 //Everyone's favorite hover
 $$(function($){
- $('.gravatar-wrapper-24').addClass('profile-link');
+ $('.profile-me').children(":first").addClass('profile-link');
  var d = StackExchange.helpers.DelayedReaction(function () {
   profileLink.show()
   }, 450, { always: function () {
