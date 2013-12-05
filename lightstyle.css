@@ -1,5 +1,5 @@
 /* adjusting hover style from dark to light */
-.profile-popup{
+.profile-me .profile-popup{
  line-height: 25px;
  margin-top: 34px !important;
 }
